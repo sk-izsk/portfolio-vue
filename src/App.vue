@@ -25,7 +25,6 @@ export default {
       this.isCallingServe = true;
       getInformations()
         .then((response) => {
-          console.log('this is data', response.data);
           this.addInformations(response.data);
         })
         .catch((err) => {
