@@ -15,8 +15,8 @@ import { mapActions } from 'vuex';
 export default {
   name: 'App',
   components: {
-    Home,
     NavBar,
+    Home,
     About,
   },
   data() {

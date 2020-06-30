@@ -7,9 +7,7 @@
         <v-icon :name="socialIcon.icon" />
       </div>
     </div>
-    <b-nav-item href="#about">
-      <b-icon class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
-    </b-nav-item>
+    <b-icon v-scroll-to="{ el: '#about' }" class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
   </div>
 </template>
 

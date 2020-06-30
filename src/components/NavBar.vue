@@ -1,12 +1,14 @@
 <template>
-  <div>
+  <div class="navbar-container">
     <b-navbar :sticky="true" toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="#">iZsk</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#home">Home</b-nav-item>
-          <b-nav-item href="#about">About</b-nav-item>
+          <b-nav-item v-scroll-to="{ el: '#home' }">Home</b-nav-item>
+          <b-nav-item v-scroll-to="{ el: '#about' }">
+            About
+          </b-nav-item>
           <b-nav-item href="#">Education</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
@@ -25,4 +27,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.navbar-container {
+  position: sticky;
+  top: 0px;
+  z-index: 120;
+}
+</style>
