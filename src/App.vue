@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div v-if="!isCallingServe" id="app">
+    <Home />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './screens/Home';
+import { getInformations } from './api/api';
+import { mapActions } from 'vuex';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Home,
+  },
+  data() {
+    return {
+      isCallingServe: false,
+    };
+  },
+  methods: {
+    ...mapActions(['addInformations']),
+    getData() {
+      this.isCallingServe = true;
+      getInformations()
+        .then((response) => {
+          this.addInformations(response.data);
+        })
+        .catch((err) => {
+          console.warn(err);
+        })
+        .finally(() => {
+          this.isCallingServe = false;
+        });
+    },
+  },
+  mounted() {
+    this.getData();
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
