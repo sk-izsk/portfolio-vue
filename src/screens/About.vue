@@ -63,7 +63,7 @@ export default {
   flex: 1;
   padding: 20px;
 }
-@media screen and (max-width: 874px) {
+@media screen and (max-width: 914px) {
   .info-prog-bar-container {
     display: flex;
     flex-direction: column;
