@@ -1,11 +1,14 @@
 <template>
   <div v-if="!isCallingServe" id="app">
     <Home />
+    <NavBar />
+    <About />
   </div>
 </template>
 
 <script>
-import Home from './screens/Home';
+import { Home, About } from './screens/';
+import { NavBar } from './components/';
 import { getInformations } from './api/api';
 import { mapActions } from 'vuex';
 
@@ -13,6 +16,8 @@ export default {
   name: 'App',
   components: {
     Home,
+    NavBar,
+    About,
   },
   data() {
     return {
@@ -41,4 +46,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#app {
+  scroll-behavior: smooth;
+}
+</style>

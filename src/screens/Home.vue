@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" id="home">
     <div class="primary-text">Zeeshan</div>
     <div class="secondary-text">Full stack web developer</div>
     <div class="social-icons">
@@ -7,7 +7,9 @@
         <v-icon :name="socialIcon.icon" />
       </div>
     </div>
-    <b-icon class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
+    <b-nav-item href="#about">
+      <b-icon class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
+    </b-nav-item>
   </div>
 </template>
 
