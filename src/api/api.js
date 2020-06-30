@@ -1,14 +1,14 @@
-import axios from "axios";
+import axios from 'axios';
 
 const sendEmailUrl =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:5000/email"
-    : "https://izsk-portfolio-backend.herokuapp.com/email";
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:5000/email'
+    : 'https://izsk-portfolio-backend.herokuapp.com/email';
 
 const informationsUrl =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:5000/informations"
-    : "https://izsk-portfolio-backend.herokuapp.com/informations";
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:5000/informations'
+    : 'https://izsk-portfolio-backend.herokuapp.com/informations';
 
 const getInformations = async () => {
   const response = await axios(informationsUrl);
@@ -18,7 +18,7 @@ const getInformations = async () => {
 
 const sendEmail = async (data) => {
   const response = await axios({
-    method: "POST",
+    method: 'POST',
     url: sendEmailUrl,
     data,
   });
