@@ -47,7 +47,6 @@ import { formSchema } from '../validation/validation';
 import { sendEmail } from '../api/api';
 export default {
   name: 'FormContainer',
-  components: {},
   data() {
     return {
       form: {
@@ -133,5 +132,8 @@ export default {
   height: 30px;
   width: 30px;
   cursor: pointer;
+}
+.text-center {
+  margin-top: 4px;
 }
 </style>
