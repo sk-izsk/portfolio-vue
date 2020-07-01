@@ -7,9 +7,11 @@
         <v-icon :name="socialIcon.icon" />
       </div>
     </div>
-    <b-nav-item href="#about">
-      <b-icon class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
-    </b-nav-item>
+    <b-icon v-scroll-to="{ el: '#about' }" class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
+    <div class="mt-3 flex flex-column">
+      <b-button pill class="btn" @click="openUrl('mailto:sk.zeeshan1992@gmail.com')" size="lg">Hire Me</b-button>
+      <b-button pill class="btn ml-2" @click="openUrl('https://izsk.netlify.app')" size="lg">React Portfolio</b-button>
+    </div>
   </div>
 </template>
 
@@ -76,5 +78,13 @@ export default {
 .icon:hover {
   color: #ffd15c;
   cursor: pointer;
+}
+.btn {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  border-style: none;
+  transition: transform 0.5s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 </style>

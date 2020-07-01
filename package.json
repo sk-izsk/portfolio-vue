@@ -20,6 +20,7 @@
     "styled-components": "^5.1.1",
     "vue": "^2.6.11",
     "vue-icon": "^2.1.2",
+    "vue-scrollto": "^2.18.1",
     "vuex": "^3.4.0",
     "yup": "^0.29.1"
   },

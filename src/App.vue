@@ -1,23 +1,33 @@
 <template>
-  <div v-if="!isCallingServe" id="app">
-    <Home />
-    <NavBar />
-    <About />
+  <div>
+    <Spinner v-if="isCallingServe" :variant="'warning'" />
+    <div v-if="!isCallingServe" id="app">
+      <Home />
+      <NavBar />
+      <About />
+      <Education />
+      <Experience />
+      <Photography />
+    </div>
   </div>
 </template>
 
 <script>
-import { Home, About } from './screens/';
-import { NavBar } from './components/';
+import { Home, About, Education, Experience, Photography } from './screens/';
+import { NavBar, Spinner } from './components/';
 import { getInformations } from './api/api';
 import { mapActions } from 'vuex';
 
 export default {
   name: 'App',
   components: {
-    Home,
+    Spinner,
     NavBar,
+    Home,
     About,
+    Education,
+    Experience,
+    Photography,
   },
   data() {
     return {
