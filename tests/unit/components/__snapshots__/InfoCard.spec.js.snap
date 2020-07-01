@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCard renders when passed 1`] = `
+<div>
+  <div class="info-card">
+    <b-icon icon="mock icon name" variant="primary" class="icon"></b-icon>
+    <b-card title="mock  organization" sub-title="2020" class="card-container">
+      <b-card-text>
+        mock details
+      </b-card-text>
+    </b-card>
+  </div>
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressContainer renders when passed 1`] = `
+<div class="main-container">
+  <div class="main-progress-container">
+    <h5>React</h5>
+    <b-progress value="80" max="100" show-progress="" animated="" class="mb-3"></b-progress>
+  </div>
+</div>
+`;

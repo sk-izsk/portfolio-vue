@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders when passed 1`] = `
+<div>
+  <b-modal visible="true" title="mock title">
+    <b-icon variant="primary" icon="mock Icon Name" class="icon"></b-icon>
+    <h5 class="my-4">mock description</h5>
+  </b-modal>
+</div>
+`;
