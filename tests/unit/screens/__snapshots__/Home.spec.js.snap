@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders when passed 1`] = `
+<div id="home" class="home">
+  <div class="primary-text">Zeeshan</div>
+  <div class="secondary-text">Full stack web developer</div>
+  <div class="social-icons">
+    <div>
+      <v-icon name="github"></v-icon>
+    </div>
+    <div>
+      <v-icon name="linkedin"></v-icon>
+    </div>
+    <div>
+      <v-icon name="twitter"></v-icon>
+    </div>
+    <div>
+      <v-icon name="facebook"></v-icon>
+    </div>
+    <div>
+      <v-icon name="instagram"></v-icon>
+    </div>
+    <div>
+      <v-icon name="send"></v-icon>
+    </div>
+    <div>
+      <v-icon name="at-sign"></v-icon>
+    </div>
+  </div>
+  <b-icon icon="arrow-down-circle" animation="throb" class="icon"></b-icon>
+  <div class="mt-3 flex flex-column">
+    <b-button pill="" size="lg" class="btn">Hire Me</b-button>
+    <b-button pill="" size="lg" class="btn ml-2">React Portfolio</b-button>
+  </div>
+</div>
+`;

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormContainer renders when passed 1`] = `
+<div class="form-container">
+  <b-modal title="Send Successfully">
+    <b-icon variant="primary" icon="hand-thumbs-up" class="icon"></b-icon>
+    <h5 class="my-4">Will get back to you as soon as possible</h5>
+  </b-modal>
+  <b-modal title="Opps Something goes wrong !!!!!">
+    <b-icon variant="primary" icon="exclamation-diamond-fill" class="icon"></b-icon>
+    <h5 class="my-4">
+      Seems like something went wrong. Kindly <span class="text">email</span> me.
+    </h5>
+  </b-modal>
+  <b-form class="form-group-parent">
+    <b-form-group label="Your Name:">
+      <b-form-input required="" placeholder="Enter name"></b-form-input>
+    </b-form-group>
+    <b-form-group label="Email address:">
+      <b-form-input type="email" required="" placeholder="Enter email"></b-form-input>
+    </b-form-group>
+    <b-form-group label="Subject:">
+      <b-form-input required="" placeholder="Enter subject"></b-form-input>
+    </b-form-group>
+    <b-form-group label="Message:">
+      <b-form-textarea placeholder="Enter message" required="" rows="3" no-resize=""></b-form-textarea>
+    </b-form-group>
+    <div class="btn-container">
+      <b-button pill="" type="submit" size="lg" class="btn ml-2">Send Message</b-button>
+    </div>
+    <b-card-text class="text-center">
+      Don't like forms? Send me an <span class="text">Email</span></b-card-text>
+  </b-form>
+</div>
+`;

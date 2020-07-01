@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact renders when passed 1`] = `
+<div id="contact">
+  <h1>Contact</h1>
+  <formcontainer-stub></formcontainer-stub>
+</div>
+`;

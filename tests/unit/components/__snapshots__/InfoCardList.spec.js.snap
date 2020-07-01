@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCardList renders when passed 1`] = `
+<div>
+  <h1>mock title</h1>
+  <infocard-stub informations="[object Object]" iconname="mock icon name"></infocard-stub>
+</div>
+`;
