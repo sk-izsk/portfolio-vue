@@ -80,5 +80,6 @@ h1 {
 }
 .btn:hover {
   transform: scale(1.1);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
 }
 </style>

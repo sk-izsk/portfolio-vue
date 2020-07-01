@@ -8,12 +8,13 @@
       <Education />
       <Experience />
       <Photography />
+      <Contact />
     </div>
   </div>
 </template>
 
 <script>
-import { Home, About, Education, Experience, Photography } from './screens/';
+import { Home, About, Education, Experience, Photography, Contact } from './screens/';
 import { NavBar, Spinner } from './components/';
 import { getInformations } from './api/api';
 import { mapActions } from 'vuex';
@@ -28,6 +29,7 @@ export default {
     Education,
     Experience,
     Photography,
+    Contact,
   },
   data() {
     return {
