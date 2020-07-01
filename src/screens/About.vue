@@ -1,12 +1,15 @@
 <template>
-  <div class="about" id="about">
-    <h1>About Me</h1>
-    <div class="info-prog-bar-container">
-      <div class="info-container">
-        <AboutMeCard v-if="url.length > 0" :url="url" />
-      </div>
-      <div class="progress-bar-container">
-        <ProgressContainer v-if="skilsInformations.length > 0" :skilsInformations="skilsInformations" />
+  <div>
+    <Spinner :variant="'warning'" v-if="!(url.length > 0 && skilsInformations.length > 0)" />
+    <div v-if="(url.length > 0 && skilsInformations.length > 0 )" class="about" id="about">
+      <h1>About Me</h1>
+      <div class="info-prog-bar-container">
+        <div class="info-container">
+          <AboutMeCard :url="url" />
+        </div>
+        <div class="progress-bar-container">
+          <ProgressContainer :skilsInformations="skilsInformations" />
+        </div>
       </div>
     </div>
   </div>
@@ -14,12 +17,13 @@
 
 <script>
 import { mapState } from 'vuex';
-import { AboutMeCard, ProgressContainer } from '../components/';
+import { AboutMeCard, ProgressContainer, Spinner } from '../components/';
 export default {
   name: 'About',
   components: {
     AboutMeCard,
     ProgressContainer,
+    Spinner,
   },
   data() {
     return {

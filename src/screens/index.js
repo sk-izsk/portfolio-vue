@@ -1,4 +1,6 @@
 import About from './About';
+import Education from './Education';
+import Experience from './Experience';
 import Home from './Home';
-
-export { Home, About };
+import Photography from './Photography';
+export { Home, About, Education, Experience, Photography };

@@ -11,7 +11,7 @@
               I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making
               Website. Also I am a hobbyist photographer.
             </b-card-text>
-            <b-button class="btn" @click="openCv" href="#">Download Resume</b-button>
+            <b-button pill class="btn" @click="openCv" href="#">Download Resume</b-button>
           </b-card-body>
         </b-col>
       </b-row>
@@ -43,5 +43,10 @@ export default {
 .btn {
   background: linear-gradient(to right, #56ccf2, #2f80ed);
   border-style: none;
+  transition: transform 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 </style>
