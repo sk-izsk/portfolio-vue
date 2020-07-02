@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-container">
-    <b-navbar :sticky="true" toggleable="lg" type="dark" variant="dark">
+    <b-navbar class="transparent" :sticky="true" type="dark" toggleable="lg">
       <b-navbar-brand href="/">iZsk</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -32,5 +32,10 @@ export default {
   position: sticky;
   top: 0px;
   z-index: 120;
+}
+
+.transparent {
+  background: rgba(0, 0, 0, 0.7);
+  color: black;
 }
 </style>
