@@ -13,6 +13,7 @@
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item v-scroll-to="{ el: '#experience' }">Experience</b-nav-item>
+          <b-nav-item v-scroll-to="{ el: '#myOffer' }">My Offer</b-nav-item>
           <b-nav-item v-scroll-to="{ el: '#photography' }">Photography</b-nav-item>
           <b-nav-item v-scroll-to="{ el: '#contact' }">Contact</b-nav-item>
         </b-navbar-nav>

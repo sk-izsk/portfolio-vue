@@ -7,6 +7,7 @@
       <About />
       <Education />
       <Experience />
+      <MyOffer />
       <Photography />
       <Contact />
     </div>
@@ -14,7 +15,7 @@
 </template>
 
 <script>
-import { Home, About, Education, Experience, Photography, Contact } from './screens/';
+import { Home, About, Education, Experience, Photography, Contact, MyOffer } from './screens/';
 import { NavBar, Spinner } from './components/';
 import { getInformations } from './api/api';
 import { mapActions } from 'vuex';
@@ -28,6 +29,7 @@ export default {
     About,
     Education,
     Experience,
+    MyOffer,
     Photography,
     Contact,
   },

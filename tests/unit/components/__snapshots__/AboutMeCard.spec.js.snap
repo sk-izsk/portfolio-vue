@@ -8,12 +8,11 @@ exports[`AboutMeCard renders when passed 1`] = `
         <b-card-img src="mock url" alt="Image" class="rounded-0"></b-card-img>
       </b-col>
       <b-col md="6">
-        <b-card-body title="Zeeshan">
+        <b-card-body title=" mock header">
           <b-card-text>
-            I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making
-            Website. Also I am a hobbyist photographer.
+            mock description
           </b-card-text>
-          <b-button pill="" href="#" class="btn">Download Resume</b-button>
+          <b-button pill="" href="#" class="btn">mock text</b-button>
         </b-card-body>
       </b-col>
     </b-row>

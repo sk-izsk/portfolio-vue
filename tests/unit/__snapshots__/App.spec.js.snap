@@ -9,6 +9,7 @@ exports[`App renders when passed 1`] = `
     <about-stub></about-stub>
     <education-stub></education-stub>
     <experience-stub></experience-stub>
+    <myoffer-stub></myoffer-stub>
     <photography-stub></photography-stub>
     <contact-stub></contact-stub>
   </div>
