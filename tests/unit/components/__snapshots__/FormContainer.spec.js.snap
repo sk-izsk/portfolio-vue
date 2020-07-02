@@ -2,11 +2,11 @@
 
 exports[`FormContainer renders when passed 1`] = `
 <div class="form-container">
-  <b-modal title="Send Successfully">
+  <b-modal title="Send Successfully" centered="">
     <b-icon variant="primary" icon="hand-thumbs-up" class="icon"></b-icon>
     <h5 class="my-4">Will get back to you as soon as possible</h5>
   </b-modal>
-  <b-modal title="Opps Something goes wrong !!!!!">
+  <b-modal title="Opps Something goes wrong !!!!!" centered="">
     <b-icon variant="primary" icon="exclamation-diamond-fill" class="icon"></b-icon>
     <h5 class="my-4">
       Seems like something went wrong. Kindly <span class="text">email</span> me.

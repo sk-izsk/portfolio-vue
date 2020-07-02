@@ -1,11 +1,11 @@
 <template>
   <div class="form-container">
-    <b-modal :visible="successModal" title="Send Successfully">
+    <b-modal :visible="successModal" title="Send Successfully" centered>
       <b-icon class="icon" variant="primary" icon="hand-thumbs-up"></b-icon>
       <h5 class="my-4">Will get back to you as soon as possible</h5>
     </b-modal>
 
-    <b-modal :visible="errorModal" title="Opps Something goes wrong !!!!!">
+    <b-modal :visible="errorModal" title="Opps Something goes wrong !!!!!" centered>
       <b-icon class="icon" variant="primary" icon="exclamation-diamond-fill"></b-icon>
       <h5 class="my-4">
         Seems like something went wrong. Kindly <span @click="openEmail" class="text">email</span> me.
@@ -135,5 +135,10 @@ export default {
 }
 .text-center {
   margin-top: 4px;
+}
+.modal-body {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 </style>
