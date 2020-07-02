@@ -6,12 +6,11 @@
           <b-card-img :src="url" alt="Image" class="rounded-0"></b-card-img>
         </b-col>
         <b-col md="6">
-          <b-card-body title="Zeeshan">
+          <b-card-body :title="header">
             <b-card-text>
-              I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making
-              Website. Also I am a hobbyist photographer.
+              {{ description }}
             </b-card-text>
-            <b-button pill class="btn" @click="openCv" href="#">Download Resume</b-button>
+            <b-button pill class="btn" @click="openLink" href="#">{{ buttonText }}</b-button>
           </b-card-body>
         </b-col>
       </b-row>
@@ -24,14 +23,10 @@ export default {
   name: 'AboutMeCard',
   props: {
     url: String,
-  },
-  methods: {
-    openCv() {
-      window.open(
-        'https://docs.google.com/document/d/16Ko4S8n50fedwi4re2K-djKxe2zGrRRWKuXdtko7jow/edit?usp=sharing',
-        '_blank',
-      );
-    },
+    description: String,
+    openLink: Function,
+    buttonText: String,
+    header: String,
   },
 };
 </script>

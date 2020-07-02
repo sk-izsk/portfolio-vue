@@ -1,11 +1,28 @@
 <template>
   <div>
-    <Spinner :variant="'warning'" v-if="!(url.length > 0 && skilsInformations.length > 0)" />
-    <div v-if="(url.length > 0 && skilsInformations.length > 0 )" class="about" id="about">
+    <Spinner :variant="'warning'" v-if="!(urlOne.length > 0 && urlTwo.length > 0 && skilsInformations.length > 0)" />
+    <div v-if="(urlOne.length > 0 && urlTwo.length > 0  && skilsInformations.length > 0 )" class="about" id="about">
       <h1>About Me</h1>
       <div class="info-prog-bar-container">
-        <div class="info-container">
-          <AboutMeCard :url="url" />
+        <div class="info-container-parent">
+          <div class="info-container">
+            <AboutMeCard
+              :url="urlTwo"
+              :description="' I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website.'"
+              :openLink="openCv"
+              :buttonText="'Download Resume'"
+              :header="'Coding'"
+            />
+          </div>
+          <div class="info-container">
+            <AboutMeCard
+              :url="urlOne"
+              :description="'Apart from coding I love to take pictures. Potrayed, street photograpy, landscape and many more. I love to travel in different places as well'"
+              :openLink="openInsta"
+              :buttonText="'Explore More Images'"
+              :header="'Hobbies'"
+            />
+          </div>
         </div>
         <div class="progress-bar-container">
           <ProgressContainer :skilsInformations="skilsInformations" />
@@ -27,18 +44,43 @@ export default {
   },
   data() {
     return {
-      url: '',
+      urlTwo: '',
+      urlOne: '',
       skilsInformations: [],
-      variants: ['primary', 'secondary', 'info', 'success', 'danger'],
+      variants: [
+        'primary',
+        'secondary',
+        'info',
+        'success',
+        'danger',
+        'primary',
+        'secondary',
+        'info',
+        'success',
+        'danger',
+        'info',
+      ],
     };
   },
   computed: {
     ...mapState(['informations']),
   },
+  methods: {
+    openCv() {
+      window.open(
+        'https://docs.google.com/document/d/16Ko4S8n50fedwi4re2K-djKxe2zGrRRWKuXdtko7jow/edit?usp=sharing',
+        '_blank',
+      );
+    },
+    openInsta() {
+      window.open('https://www.instagram.com/sk_izsk/', '_blank');
+    },
+  },
   beforeMount() {
     const { avatar, skillsInformation } = this.informations;
     if (avatar !== undefined && skillsInformation) {
-      this.url = avatar.avatarTwo;
+      this.urlTwo = avatar.avatarTwo;
+      this.urlOne = avatar.avatarOne;
       this.skilsInformations = skillsInformation.map((skillInformation, index) => {
         return { ...skillInformation, variant: this.variants[index] };
       });
@@ -66,6 +108,11 @@ export default {
   display: flex;
   flex: 1;
   padding: 20px;
+}
+
+.info-container-parent {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 914px) {
   .info-prog-bar-container {

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OfferingContainer renders when passed 1`] = `
+<div>
+  <b-card no-body="" header="mock title">
+    <b-list-group flush="">
+      <b-list-group-item>
+        <b-icon icon="check-all" animation="throb" font-scale="1.5" variant="primary"></b-icon>
+        mock data
+      </b-list-group-item>
+    </b-list-group>
+  </b-card>
+</div>
+`;
