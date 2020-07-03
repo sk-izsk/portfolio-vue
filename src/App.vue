@@ -9,7 +9,9 @@
       <Experience />
       <MyOffer />
       <Photography />
-      <Contact />
+      <b-overlay :show="isEmailSending" rounded="lg" spinner-variant="warning" spinner-type="grow">
+        <Contact v-on:sendingEmailFromContact="updateSendingEmailStatus($event)" />
+      </b-overlay>
     </div>
   </div>
 </template>
@@ -36,7 +38,13 @@ export default {
   data() {
     return {
       isCallingServe: false,
+      isEmailSending: false,
     };
+  },
+  created() {
+    this.$on('sendingEmail', (value) => {
+      console.log('this is even', value);
+    });
   },
   methods: {
     ...mapActions(['addInformations']),
@@ -44,7 +52,7 @@ export default {
       this.isCallingServe = true;
       getInformations()
         .then((response) => {
-          this.addInformations(response.data);
+          this.addInformations(response.data[0]);
         })
         .catch((err) => {
           console.warn(err);
@@ -52,6 +60,9 @@ export default {
         .finally(() => {
           this.isCallingServe = false;
         });
+    },
+    updateSendingEmailStatus(event) {
+      this.isEmailSending = event;
     },
   },
   mounted() {

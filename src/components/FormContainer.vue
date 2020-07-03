@@ -73,7 +73,12 @@ export default {
         message,
       };
       formSchema.validate(payload).then((payload) => {
-        sendEmail(payload)
+        const addEnvironment = {
+          ...payload,
+          environment: process.env.NODE_ENV === 'development' ? 'development' : 'production',
+        };
+        this.$emit('sendingEmail', true);
+        sendEmail(addEnvironment)
           .then((response) => {
             if (response.status === 200) {
               this.form = {
@@ -82,6 +87,7 @@ export default {
                 subject: '',
                 message: '',
               };
+              this.$emit('sendingEmail', false);
               this.successModal = true;
             }
           })
