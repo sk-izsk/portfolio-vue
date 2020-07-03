@@ -1,23 +1,26 @@
 <template>
-  <div id="photography">
-    <h1>Photography</h1>
-    <b-container fluid class="p-4 bg-dark">
-      <b-row class="image-container">
-        <b-img
-          @click="openUrl"
-          v-for="photo in photos"
-          :key="photo.url"
-          class="m-2 photo"
-          thumbnail
-          fluid
-          :src="photo.url"
-          :alt="photo.url"
-        ></b-img>
-      </b-row>
-      <div class="btn-container">
-        <b-button pill class="btn ml-2" @click="openUrl" size="lg">More Images</b-button>
-      </div>
-    </b-container>
+  <div>
+    <Spinner variant="warning" v-if="photos.length === 0" />
+    <div id="photography" v-if="photos.length > 0">
+      <h1>Photography</h1>
+      <b-container fluid class="p-4 bg-dark">
+        <b-row class="image-container">
+          <b-img
+            @click="openUrl"
+            v-for="photo in photos"
+            :key="photo.url"
+            class="m-2 photo"
+            thumbnail
+            fluid
+            :src="photo.url"
+            :alt="photo.url"
+          ></b-img>
+        </b-row>
+        <div class="btn-container">
+          <b-button pill class="btn ml-2" @click="openUrl" size="lg">More Images</b-button>
+        </div>
+      </b-container>
+    </div>
   </div>
 </template>
 
