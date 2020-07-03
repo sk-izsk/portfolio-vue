@@ -11,7 +11,9 @@ exports[`App renders when passed 1`] = `
     <experience-stub></experience-stub>
     <myoffer-stub></myoffer-stub>
     <photography-stub></photography-stub>
-    <contact-stub></contact-stub>
+    <b-overlay rounded="lg" spinner-variant="warning" spinner-type="grow">
+      <contact-stub></contact-stub>
+    </b-overlay>
   </div>
 </div>
 `;
