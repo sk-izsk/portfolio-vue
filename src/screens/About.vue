@@ -8,7 +8,7 @@
           <div class="info-container">
             <AboutMeCard
               :url="urlTwo"
-              :description="' I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website.'"
+              :description="' I am Shaikh Zeeshan Murshed, Full stack web developer from Montreal, Canada. I have experience in making Website.'"
               :openLink="openCv"
               :buttonText="'Download Resume'"
               :header="'Coding'"

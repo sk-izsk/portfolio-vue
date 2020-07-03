@@ -1,9 +1,12 @@
 <template>
-  <div id="myOffer">
-    <h1>My Offer</h1>
-    <div class="offering-container">
-      <OfferingContainer class="frontend" :title="frontEnd.name" :offerings="frontEnd.offerings" />
-      <OfferingContainer class="backend" :title="backEnd.name" :offerings="backEnd.offerings" />
+  <div>
+    <Spinner variant="warning" v-if="!(frontEnd.name && backEnd.name)" />
+    <div id="myOffer" v-if="frontEnd.name && backEnd.name">
+      <h1>My Offer</h1>
+      <div class="offering-container">
+        <OfferingContainer class="frontend" :title="frontEnd.name" :offerings="frontEnd.offerings" />
+        <OfferingContainer class="backend" :title="backEnd.name" :offerings="backEnd.offerings" />
+      </div>
     </div>
   </div>
 </template>
