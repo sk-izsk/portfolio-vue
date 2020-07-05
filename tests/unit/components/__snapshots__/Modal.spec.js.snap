@@ -2,9 +2,9 @@
 
 exports[`Modal renders when passed 1`] = `
 <div>
-  <b-modal visible="true" title="mock title">
-    <b-icon variant="primary" icon="mock Icon Name" class="icon"></b-icon>
+  <b-modal-stub size="md" ignoreenforcefocusselector="" title="mock title" titletag="h5" visible="true" headerclosecontent="&amp;times;" headercloselabel="Close" canceltitle="Cancel" oktitle="OK" cancelvariant="secondary" okvariant="primary">
+    <b-icon-stub icon="mock Icon Name" variant="primary" fontscale="1" scale="1" rotate="0" shifth="0" shiftv="0" class="icon"></b-icon-stub>
     <h5 class="my-4">mock description</h5>
-  </b-modal>
+  </b-modal-stub>
 </div>
 `;

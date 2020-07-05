@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Spinner variant="warning" v-if="photos.length === 0" />
+    <Spinner :variant="'warning'" v-if="photos.length === 0" />
     <div id="photography" v-if="photos.length > 0">
       <h1>Photography</h1>
       <b-container fluid class="p-4 bg-dark">
@@ -25,9 +25,13 @@
 </template>
 
 <script>
+import { Spinner } from '../components/';
 import { mapState } from 'vuex';
 export default {
   name: 'Photography',
+  components: {
+    Spinner,
+  },
   data() {
     return {
       photos: [],

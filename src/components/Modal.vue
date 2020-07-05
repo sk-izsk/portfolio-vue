@@ -8,8 +8,13 @@
 </template>
 
 <script>
+import { BModal, BIcon } from 'bootstrap-vue';
 export default {
   name: 'Modal',
+  components: {
+    BModal,
+    BIcon,
+  },
   props: {
     description: String,
     showModal: Boolean,

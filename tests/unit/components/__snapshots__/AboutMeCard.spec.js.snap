@@ -2,20 +2,20 @@
 
 exports[`AboutMeCard renders when passed 1`] = `
 <div>
-  <b-card no-body="" class="overflow-hidden" style="max-width: 540px;">
-    <b-row no-gutters="">
-      <b-col md="6">
-        <b-card-img src="mock url" alt="Image" class="rounded-0"></b-card-img>
-      </b-col>
-      <b-col md="6">
-        <b-card-body title=" mock header">
-          <b-card-text>
+  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true" class="overflow-hidden">
+    <b-row-stub tag="div" nogutters="true">
+      <b-col-stub md="6" tag="div">
+        <b-card-img-stub src="mock url" alt="Image" class="rounded-0"></b-card-img-stub>
+      </b-col-stub>
+      <b-col-stub md="6" tag="div">
+        <b-card-body-stub bodytag="div" title=" mock header" titletag="h4" subtitletag="h6" subtitletextvariant="muted">
+          <b-card-text-stub texttag="p">
             mock description
-          </b-card-text>
-          <b-button pill="" href="#" class="btn">mock text</b-button>
-        </b-card-body>
-      </b-col>
-    </b-row>
-  </b-card>
+          </b-card-text-stub>
+          <b-button-stub variant="secondary" type="button" tag="button" pill="true" href="#" target="_self" class="btn">mock text</b-button-stub>
+        </b-card-body-stub>
+      </b-col-stub>
+    </b-row-stub>
+  </b-card-stub>
 </div>
 `;

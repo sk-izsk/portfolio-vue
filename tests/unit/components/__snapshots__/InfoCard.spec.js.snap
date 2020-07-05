@@ -3,12 +3,12 @@
 exports[`InfoCard renders when passed 1`] = `
 <div>
   <div class="info-card">
-    <b-icon icon="mock icon name" variant="primary" class="icon"></b-icon>
-    <b-card title="mock  organization" sub-title="2020" class="card-container">
-      <b-card-text>
+    <b-icon-stub icon="mock icon name" variant="primary" fontscale="1" scale="1" rotate="0" shifth="0" shiftv="0" class="icon"></b-icon-stub>
+    <b-card-stub bodytag="div" title="mock  organization" titletag="h4" subtitle="2020" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" class="card-container">
+      <b-card-text-stub texttag="p">
         mock details
-      </b-card-text>
-    </b-card>
+      </b-card-text-stub>
+    </b-card-stub>
   </div>
 </div>
 `;

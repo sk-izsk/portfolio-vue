@@ -45,8 +45,19 @@
 <script>
 import { formSchema } from '../validation/validation';
 import { sendEmail } from '../api/api';
+import { BModal, BCardText, BIcon, BForm, BButton, BFormTextarea, BFormGroup, BFormInput } from 'bootstrap-vue';
 export default {
   name: 'FormContainer',
+  components: {
+    BModal,
+    BCardText,
+    BIcon,
+    BForm,
+    BButton,
+    BFormTextarea,
+    BFormGroup,
+    BFormInput,
+  },
   data() {
     return {
       form: {

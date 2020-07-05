@@ -2,13 +2,13 @@
 
 exports[`OfferingContainer renders when passed 1`] = `
 <div>
-  <b-card no-body="" header="mock title">
-    <b-list-group flush="">
-      <b-list-group-item>
-        <b-icon icon="check-all" animation="throb" font-scale="1.5" variant="primary"></b-icon>
+  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" header="mock title" footertag="div" tag="div" nobody="true">
+    <b-list-group-stub tag="div" flush="true">
+      <b-list-group-item-stub tag="div" target="_self">
+        <b-icon-stub icon="check-all" variant="primary" fontscale="1.5" scale="1" rotate="0" shifth="0" shiftv="0" animation="throb"></b-icon-stub>
         mock data
-      </b-list-group-item>
-    </b-list-group>
-  </b-card>
+      </b-list-group-item-stub>
+    </b-list-group-stub>
+  </b-card-stub>
 </div>
 `;

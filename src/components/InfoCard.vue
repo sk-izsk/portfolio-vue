@@ -12,8 +12,14 @@
 </template>
 
 <script>
+import { BCard, BCardText, BIcon } from 'bootstrap-vue';
 export default {
   name: 'InfoCard',
+  components: {
+    BCard,
+    BCardText,
+    BIcon,
+  },
   props: {
     informations: Array,
     iconName: String,

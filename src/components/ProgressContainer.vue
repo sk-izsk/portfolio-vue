@@ -15,8 +15,12 @@
 </template>
 
 <script>
+import { BProgress } from 'bootstrap-vue';
 export default {
   name: 'ProgressContainer',
+  components: {
+    BProgress,
+  },
   props: {
     skilsInformations: Array,
   },

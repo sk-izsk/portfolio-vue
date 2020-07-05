@@ -23,8 +23,17 @@
 </template>
 
 <script>
+import { BNavbar, BCollapse, BNavbarNav, BNavItem, BNavbarToggle, BNavbarBrand } from 'bootstrap-vue';
 export default {
   name: 'NavBar',
+  components: {
+    BNavbar,
+    BCollapse,
+    BNavbarNav,
+    BNavItem,
+    BNavbarToggle,
+    BNavbarBrand,
+  },
 };
 </script>
 
