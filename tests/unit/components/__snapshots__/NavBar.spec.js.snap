@@ -2,7 +2,7 @@
 
 exports[`NavBar renders when passed 1`] = `
 <div class="navbar-container">
-  <b-navbar-stub tag="nav" type="dark" toggleable="lg" sticky="true" class="transparent">
+  <b-navbar-stub tag="nav" type="dark" toggleable="md" sticky="true" class="transparent">
     <b-navbar-brand-stub tag="div" href="/" target="_self">iZsk</b-navbar-brand-stub>
     <b-navbar-toggle-stub label="Toggle navigation" target="nav-collapse"></b-navbar-toggle-stub>
     <b-collapse-stub id="nav-collapse" isnav="true" tag="div">

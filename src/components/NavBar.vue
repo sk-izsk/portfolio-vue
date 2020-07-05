@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-container">
-    <b-navbar class="transparent" :sticky="true" type="dark" toggleable="lg">
+    <b-navbar toggleable="md" class="transparent" :sticky="true" type="dark">
       <b-navbar-brand href="/">iZsk</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
