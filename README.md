@@ -133,7 +133,7 @@ yarn prettier:fix
 
 Shaikh Zeeshan Murshed - [@Sk_iZsk](https://twitter.com/Sk_iZsk) - sk.zeeshan1992@gmail.com
 
-Project Link: [https://github.com/sk-izsk/portfolio](https://github.com/sk-izsk/portfolio-vue)
+Project Link: [https://github.com/sk-izsk/portfolio-vue](https://github.com/sk-izsk/portfolio-vue)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
