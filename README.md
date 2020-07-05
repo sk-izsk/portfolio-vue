@@ -52,7 +52,7 @@ The Frontend of this portfolio build mainly on Vue along with some other importa
 - [Vue-Bootstrap](https://bootstrap-vue.org)
 - [CSS](https://www.w3schools.com/css/)
 - [Axios](https://github.com/axios/axios)
-- [Javascript](https://www.typescriptlang.org)
+- [Javascript](https://www.javascript.com)
 - [Yup](https://github.com/jquense/yup)
 - [Netlify(deploy)](https://www.netlify.com)
 - [Yarn](https://classic.yarnpkg.com/lang/en/)
