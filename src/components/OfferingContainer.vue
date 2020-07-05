@@ -12,8 +12,15 @@
 </template>
 
 <script>
+import { BCard, BListGroup, BIcon, BListGroupItem } from 'bootstrap-vue';
 export default {
   name: 'OfferingContainer',
+  components: {
+    BCard,
+    BListGroup,
+    BIcon,
+    BListGroupItem,
+  },
   props: {
     title: String,
     offerings: Array,

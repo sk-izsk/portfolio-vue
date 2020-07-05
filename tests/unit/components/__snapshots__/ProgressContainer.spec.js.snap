@@ -4,7 +4,7 @@ exports[`ProgressContainer renders when passed 1`] = `
 <div class="main-container">
   <div class="main-progress-container">
     <h5>React</h5>
-    <b-progress value="80" max="100" show-progress="" animated="" class="mb-3"></b-progress>
+    <b-progress-stub animated="true" precision="0" showprogress="true" max="100" value="80" class="mb-3"></b-progress-stub>
   </div>
 </div>
 `;

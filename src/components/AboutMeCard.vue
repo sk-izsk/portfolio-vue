@@ -19,8 +19,18 @@
 </template>
 
 <script>
+import { BCard, BRow, BCol, BCardBody, BButton, BCardText, BCardImg } from 'bootstrap-vue';
 export default {
   name: 'AboutMeCard',
+  components: {
+    BCard,
+    BRow,
+    BCol,
+    BCardBody,
+    BButton,
+    BCardText,
+    BCardImg,
+  },
   props: {
     url: String,
     description: String,

@@ -1,5 +1,6 @@
 <template>
   <div class="home" id="home">
+    <particles-bg type="thick" :num="5" :bg="true" />
     <div class="primary-text">Zeeshan</div>
     <div class="secondary-text">Full stack web developer</div>
     <div class="social-icons">
@@ -16,8 +17,15 @@
 </template>
 
 <script>
+import { BButton, BIcon } from 'bootstrap-vue';
+import { ParticlesBg } from 'particles-bg-vue';
 export default {
   name: 'Home',
+  components: {
+    ParticlesBg,
+    BButton,
+    BIcon,
+  },
   data() {
     return {
       socialIcons: [
@@ -44,8 +52,6 @@ export default {
   display: flex;
   justify-content: center;
   background-size: cover;
-  background: linear-gradient(transparent, #000),
-    url('https://lh3.googleusercontent.com/pw/ACtC-3cye7uJhsfmf6gwLDESdUlWKLPtHJ1j-Czs4-HdZhGwnIIsNOTRJNn_C1xNl1DAR75FuupySIiU85Tb-IqiKczJKG6TSSbopGVn-emMOcO3bXABnKr-PjFQJwUXKVwURSgo6d7KVhU4MPB89LIkgYQk0w=w1080-h810-no?authuser=0');
   background-position: 50% 0px;
   height: 100vh;
   background-attachment: fixed;

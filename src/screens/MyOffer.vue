@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Spinner variant="warning" v-if="!(frontEnd.name && backEnd.name)" />
+    <Spinner :variant="'warning'" v-if="!(frontEnd.name && backEnd.name)" />
     <div id="myOffer" v-if="frontEnd.name && backEnd.name">
       <h1>My Offer</h1>
       <div class="offering-container">
@@ -13,11 +13,12 @@
 
 <script>
 import { mapState } from 'vuex';
-import { OfferingContainer } from '../components/';
+import { OfferingContainer, Spinner } from '../components/';
 export default {
   name: 'MyOffer',
   components: {
     OfferingContainer,
+    Spinner,
   },
   data() {
     return {

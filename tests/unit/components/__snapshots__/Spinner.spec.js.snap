@@ -2,6 +2,6 @@
 
 exports[`Spinner renders when passed 1`] = `
 <div class="d-flex justify-content-center mb-3 align-items-center spinner">
-  <b-spinner label="Large Spinner" variant="primary" type="grow" style="width: 3rem; height: 3rem;"></b-spinner>
+  <b-spinner-stub type="grow" label="Large Spinner" variant="primary" role="status" tag="span"></b-spinner-stub>
 </div>
 `;
