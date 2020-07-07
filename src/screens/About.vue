@@ -51,14 +51,14 @@ export default {
         'primary',
         'secondary',
         'info',
-        'success',
+        'warning',
         'danger',
         'primary',
         'secondary',
         'info',
         'success',
         'danger',
-        'info',
+        'warning',
       ],
     };
   },
@@ -96,6 +96,7 @@ export default {
 }
 .info-prog-bar-container {
   display: flex;
+  flex-direction: column;
 }
 .info-container {
   display: flex;
@@ -112,10 +113,14 @@ export default {
 
 .info-container-parent {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 @media screen and (max-width: 914px) {
   .info-prog-bar-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-container-parent {
     display: flex;
     flex-direction: column;
   }
