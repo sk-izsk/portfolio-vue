@@ -2,9 +2,14 @@
 
 exports[`ProgressContainer renders when passed 1`] = `
 <div class="main-container">
-  <div class="main-progress-container">
-    <h5>React</h5>
-    <b-progress-stub animated="true" precision="0" showprogress="true" max="100" value="80" class="mb-3"></b-progress-stub>
-  </div>
+  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" header="FRONTEND" footertag="div" tag="div" nobody="true">
+    <b-list-group-stub tag="div" flush="true"></b-list-group-stub>
+  </b-card-stub>
+  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" header="BACKEND" footertag="div" tag="div" nobody="true">
+    <b-list-group-stub tag="div" flush="true"></b-list-group-stub>
+  </b-card-stub>
+  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" header="MISC" footertag="div" tag="div" nobody="true">
+    <b-list-group-stub tag="div" flush="true"></b-list-group-stub>
+  </b-card-stub>
 </div>
 `;
