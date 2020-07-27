@@ -8,6 +8,7 @@ exports[`InfoCard renders when passed 1`] = `
       <b-card-text-stub texttag="p">
         mock details
       </b-card-text-stub>
+      <!---->
     </b-card-stub>
   </div>
 </div>
