@@ -6,23 +6,30 @@
         <b-card-text>
           {{ information.details }}
         </b-card-text>
+        <b-button v-if="information.link" pill class="btn" @click="openLink(information.link)" href="#">Open</b-button>
       </b-card>
     </div>
   </div>
 </template>
 
 <script>
-import { BCard, BCardText, BIcon } from 'bootstrap-vue';
+import { BCard, BCardText, BIcon, BButton } from 'bootstrap-vue';
 export default {
   name: 'InfoCard',
   components: {
     BCard,
     BCardText,
     BIcon,
+    BButton,
   },
   props: {
     informations: Array,
     iconName: String,
+  },
+  methods: {
+    openLink(link) {
+      window.open(link, '_blank');
+    },
   },
 };
 </script>
@@ -49,5 +56,17 @@ export default {
   display: flex;
   flex-direction: row;
   padding-left: 20px;
+  justify-content: space-between;
+}
+
+.btn {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  border-style: none;
+  transition: transform 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
 }
 </style>
