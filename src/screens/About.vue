@@ -1,7 +1,7 @@
 <template>
   <div>
     <Spinner :variant="'warning'" v-if="!(urlOne.length > 0 && urlTwo.length > 0 && skilsInformations.length > 0)" />
-    <div v-if="(urlOne.length > 0 && urlTwo.length > 0  && skilsInformations.length > 0 )" class="about" id="about">
+    <div v-if="urlOne.length > 0 && urlTwo.length > 0 && skilsInformations.length > 0" class="about" id="about">
       <h1>About Me</h1>
       <div class="info-prog-bar-container">
         <div class="info-container-parent">

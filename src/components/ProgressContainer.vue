@@ -1,14 +1,8 @@
 <template lang="">
-  <div class="main-container">
-    <b-card no-body :key="technology" :header="technology" v-for="technology in technologies">
-      <b-list-group flush>
-        <b-list-group-item :key="tech.name" v-for="tech in getSpecificTechnology(technology)">
-          <h5>{{ tech.name }}</h5>
-          <b-progress :value="tech.progress" :max="100" class="mb-3" :variant="tech.variant" show-progress animated
-        /></b-list-group-item>
-      </b-list-group>
-    </b-card>
-  </div>
+  <div class="main-container"> <b-card no-body :key="technology" :header="technology" v-for="technology in
+  technologies"> <b-list-group flush> <b-list-group-item :key="tech.name" v-for="tech in
+  getSpecificTechnology(technology)"> <h5>{{ tech.name }}</h5> <b-progress :value="tech.progress" :max="100"
+  class="mb-3" :variant="tech.variant" show-progress animated /></b-list-group-item> </b-list-group> </b-card> </div>
 </template>
 
 <script>
