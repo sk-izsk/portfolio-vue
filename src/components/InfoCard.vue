@@ -2,7 +2,7 @@
   <div>
     <div :key="information.nameOfOrganization" class="info-card" v-for="information in informations">
       <b-icon class="icon" :icon="iconName" variant="primary"></b-icon>
-      <b-card class="card-container" :title="information.nameOfOrganization" :sub-title="(information.startYear)">
+      <b-card class="card-container" :title="information.nameOfOrganization" :sub-title="information.startYear">
         <b-card-text>
           {{ information.details }}
         </b-card-text>

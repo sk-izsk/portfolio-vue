@@ -6,9 +6,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item v-scroll-to="{ el: '#home' }">Home</b-nav-item>
-          <b-nav-item v-scroll-to="{ el: '#about' }">
-            About
-          </b-nav-item>
+          <b-nav-item v-scroll-to="{ el: '#about' }"> About </b-nav-item>
           <b-nav-item v-scroll-to="{ el: '#education' }">Education</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
