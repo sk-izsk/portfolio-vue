@@ -10,7 +10,7 @@ import App from './App.vue';
 import store from './store';
 
 Vue.use(VueAnalytics, {
-  id: process.env.VUE_APP_GOOGLE_ANALYTICS,
+  id: 'UA-177435375-2',
 });
 Vue.use(VueScrollTo);
 Vue.use(VueParticlesBg);
