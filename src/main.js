@@ -3,11 +3,15 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import VueParticlesBg from 'particles-bg-vue';
 import Vue from 'vue';
+import VueAnalytics from 'vue-analytics';
 import feather from 'vue-icon';
 import VueScrollTo from 'vue-scrollto';
 import App from './App.vue';
 import store from './store';
 
+Vue.use(VueAnalytics, {
+  id: process.env.VUE_APP_GOOGLE_ANALYTICS,
+});
 Vue.use(VueScrollTo);
 Vue.use(VueParticlesBg);
 Vue.use(feather, 'v-icon');
