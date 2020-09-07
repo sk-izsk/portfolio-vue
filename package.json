@@ -22,6 +22,7 @@
     "styled-components": "^5.2.0",
     "vue": "^2.6.12",
     "vue-analytics": "^5.22.1",
+    "vue-gtag": "^1.9.0",
     "vue-icon": "^2.1.2",
     "vue-scrollto": "^2.18.2",
     "vuex": "^3.5.1",

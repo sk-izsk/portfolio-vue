@@ -4,13 +4,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 import VueParticlesBg from 'particles-bg-vue';
 import Vue from 'vue';
 import VueAnalytics from 'vue-analytics';
+import VueGtag from 'vue-gtag';
 import feather from 'vue-icon';
 import VueScrollTo from 'vue-scrollto';
 import App from './App.vue';
 import store from './store';
 
+Vue.use(VueGtag, {
+  config: { id: process.env.VUE_APP_GOOGLE_ANALYTICS },
+});
+
 Vue.use(VueAnalytics, {
-  id: 'UA-177435375-2',
+  id: process.env.VUE_APP_GOOGLE_ANALYTICS,
 });
 Vue.use(VueScrollTo);
 Vue.use(VueParticlesBg);
