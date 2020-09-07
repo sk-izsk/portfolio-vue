@@ -13,7 +13,6 @@ if (process.env.NODE_ENV !== 'development') {
   Vue.use(VueGtag, {
     config: { id: process.env.VUE_APP_GOOGLE_ANALYTICS },
   });
-  console.log('this is env');
 }
 Vue.use(VueScrollTo);
 Vue.use(VueParticlesBg);
