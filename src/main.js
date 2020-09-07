@@ -9,9 +9,12 @@ import VueScrollTo from 'vue-scrollto';
 import App from './App.vue';
 import store from './store';
 
-Vue.use(VueGtag, {
-  config: { id: process.env.VUE_APP_GOOGLE_ANALYTICS },
-});
+if (process.env.NODE_ENV !== 'development') {
+  Vue.use(VueGtag, {
+    config: { id: process.env.VUE_APP_GOOGLE_ANALYTICS },
+  });
+  console.log('this is env');
+}
 Vue.use(VueScrollTo);
 Vue.use(VueParticlesBg);
 Vue.use(feather, 'v-icon');
