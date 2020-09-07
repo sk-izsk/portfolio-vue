@@ -66,6 +66,7 @@ export default {
     },
   },
   mounted() {
+    console.log('this is mounted', process.env.VUE_APP_GOOGLE_ANALYTICS);
     this.getData();
   },
 };

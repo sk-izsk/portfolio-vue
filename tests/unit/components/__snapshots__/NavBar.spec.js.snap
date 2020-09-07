@@ -8,9 +8,7 @@ exports[`NavBar renders when passed 1`] = `
     <b-collapse-stub id="nav-collapse" isnav="true" tag="div">
       <b-navbar-nav-stub tag="ul">
         <b-nav-item-stub target="_self">Home</b-nav-item-stub>
-        <b-nav-item-stub target="_self">
-          About
-        </b-nav-item-stub>
+        <b-nav-item-stub target="_self"> About </b-nav-item-stub>
         <b-nav-item-stub target="_self">Education</b-nav-item-stub>
       </b-navbar-nav-stub>
       <b-navbar-nav-stub tag="ul" class="ml-auto">
