@@ -7,6 +7,14 @@
           {{ information.details }}
         </b-card-text>
         <b-button v-if="information.link" pill class="btn" @click="openLink(information.link)" href="#">Open</b-button>
+        <b-button
+          v-if="information.demoLink"
+          pill
+          class="btn demo-link"
+          @click="openLink(information.demoLink)"
+          href="#"
+          >Demo</b-button
+        >
       </b-card>
     </div>
   </div>
@@ -68,5 +76,9 @@ export default {
 .btn:hover {
   transform: scale(1.1);
   background: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+
+.demo-link {
+  margin-left: 8px;
 }
 </style>
