@@ -2,7 +2,9 @@
   <div>
     <div :key="information.nameOfOrganization" class="info-card" v-for="information in informations">
       <b-icon class="icon" :icon="iconName" variant="primary"></b-icon>
-      <b-card class="card-container" :title="information.nameOfOrganization" :sub-title="information.startYear">
+      <b-card class="card-container" :title="information.nameOfOrganization">
+        <b-card-text class="duration"> {{ information.startYear }} - {{ information.endYear }} </b-card-text>
+
         <b-card-text>
           {{ information.details }}
         </b-card-text>
@@ -80,5 +82,10 @@ export default {
 
 .demo-link {
   margin-left: 8px;
+}
+
+.duration {
+  color: gray;
+  font-weight: bold;
 }
 </style>
