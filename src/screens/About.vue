@@ -47,20 +47,7 @@ export default {
       urlTwo: '',
       urlOne: '',
       skilsInformations: [],
-      variants: [
-        'primary',
-        'secondary',
-        'info',
-        'warning',
-        'danger',
-        'primary',
-        'secondary',
-        'info',
-        'success',
-        'danger',
-        'warning',
-        'danger',
-      ],
+      variants: ['primary', 'secondary', 'info', 'warning', 'danger', 'success'],
     };
   },
   computed: {
@@ -82,8 +69,8 @@ export default {
     if (avatar !== undefined && skillsInformation) {
       this.urlTwo = avatar.avatarTwo;
       this.urlOne = avatar.avatarOne;
-      this.skilsInformations = skillsInformation.map((skillInformation, index) => {
-        return { ...skillInformation, variant: this.variants[index] };
+      this.skilsInformations = skillsInformation.map((skillInformation) => {
+        return { ...skillInformation, variant: this.variants[Math.floor(Math.random() * this.variants.length)] };
       });
     }
   },
