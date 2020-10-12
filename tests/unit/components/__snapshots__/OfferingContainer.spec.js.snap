@@ -4,7 +4,7 @@ exports[`OfferingContainer renders when passed 1`] = `
 <div>
   <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" header="mock title" footertag="div" tag="div" nobody="true">
     <b-list-group-stub tag="div" flush="true">
-      <b-list-group-item-stub tag="div" target="_self">
+      <b-list-group-item-stub target="_self" tag="div">
         <b-icon-stub icon="check-all" variant="primary" fontscale="1.5" scale="1" rotate="0" shifth="0" shiftv="0" animation="throb"></b-icon-stub>
         mock data
       </b-list-group-item-stub>
