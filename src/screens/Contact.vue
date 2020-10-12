@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     updateStatus(event) {
-      this.$emit('sendingEmailFromContact', event);
+      this.$emit('sending-email-from-contact', event);
     },
   },
 };

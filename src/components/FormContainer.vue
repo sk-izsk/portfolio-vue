@@ -88,7 +88,7 @@ export default {
           ...payload,
           environment: process.env.NODE_ENV === 'development' ? 'development' : 'production',
         };
-        this.$emit('sendingEmail', true);
+        this.$emit('sending-email', true);
         sendEmail(addEnvironment)
           .then((response) => {
             if (response.status === 200) {
@@ -98,7 +98,7 @@ export default {
                 subject: '',
                 message: '',
               };
-              this.$emit('sendingEmail', false);
+              this.$emit('sendinge-mail', false);
               this.successModal = true;
             }
           })
