@@ -73,8 +73,12 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url(./fonts/JetBrainsMono-Regular.ttf) format('truetype');
+}
 #app {
   scroll-behavior: smooth;
-  font-family: JetBrains Mono;
+  font-family: 'JetBrains Mono';
 }
 </style>
