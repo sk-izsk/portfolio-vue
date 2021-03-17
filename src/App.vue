@@ -17,10 +17,11 @@
 </template>
 
 <script>
-import { Home, About, Education, Experience, Photography, Contact, MyOffer } from './screens/';
-import { NavBar, Spinner } from './components/';
-import { getInformations } from './api/api';
 import { mapActions } from 'vuex';
+import { getInformations } from './api/api';
+import { NavBar, Spinner } from './components/';
+import './fonts/JetBrainsMono-Regular.ttf';
+import { About, Contact, Education, Experience, Home, MyOffer, Photography } from './screens/';
 
 export default {
   name: 'App',
@@ -74,5 +75,6 @@ export default {
 <style>
 #app {
   scroll-behavior: smooth;
+  font-family: JetBrains Mono;
 }
 </style>
