@@ -20,7 +20,6 @@
 import { mapActions } from 'vuex';
 import { getInformations } from './api/api';
 import { NavBar, Spinner } from './components/';
-import './fonts/JetBrainsMono-Regular.ttf';
 import { About, Contact, Education, Experience, Home, MyOffer, Photography } from './screens/';
 
 export default {
@@ -73,10 +72,6 @@ export default {
 </script>
 
 <style>
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: local('JetBrains Mono'), url(./fonts/JetBrainsMono-Regular.ttf) format('truetype');
-}
 #app {
   scroll-behavior: smooth;
   font-family: 'JetBrains Mono';
