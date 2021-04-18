@@ -3,7 +3,7 @@
     <particles-bg type="thick" :num="5" :bg="true" />
     <div class="primary-text">Zeeshan</div>
     <div class="secondary-text">Full stack web developer</div>
-    <div class="social-icons">
+    <div class="social-icons p-1">
       <div :key="socialIcon.icon" v-for="socialIcon in socialIcons" @click="openUrl(socialIcon.url)">
         <v-icon :name="socialIcon.icon" />
       </div>
