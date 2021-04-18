@@ -3,15 +3,15 @@
     <particles-bg type="thick" :num="5" :bg="true" />
     <div class="primary-text">Zeeshan</div>
     <div class="secondary-text">Full stack web developer</div>
-    <div class="social-icons">
+    <div class="social-icons p-1">
       <div :key="socialIcon.icon" v-for="socialIcon in socialIcons" @click="openUrl(socialIcon.url)">
         <v-icon :name="socialIcon.icon" />
       </div>
     </div>
     <b-icon v-scroll-to="{ el: '#about' }" class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
-    <div class="mt-3 flex flex-column">
-      <b-button pill class="btn" @click="openUrl('https://izsk.vercel.app')" size="lg">NEXT portfolio</b-button>
-      <b-button pill class="btn ml-2" @click="openUrl('https://izsk.netlify.app')" size="lg">React Portfolio</b-button>
+    <div class="mt-3 flex text-center flex-column">
+      <b-button pill class="btn m-2" @click="openUrl('https://izsk.vercel.app')" size="lg">NEXT portfolio</b-button>
+      <b-button pill class="btn m-2" @click="openUrl('https://izsk.netlify.app')" size="lg">React Portfolio</b-button>
     </div>
   </div>
 </template>
