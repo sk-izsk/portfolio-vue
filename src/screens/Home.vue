@@ -9,9 +9,9 @@
       </div>
     </div>
     <b-icon v-scroll-to="{ el: '#about' }" class="icon" icon="arrow-down-circle" animation="throb"></b-icon>
-    <div class="mt-3 flex flex-column">
-      <b-button pill class="btn" @click="openUrl('https://izsk.vercel.app')" size="lg">NEXT portfolio</b-button>
-      <b-button pill class="btn ml-2" @click="openUrl('https://izsk.netlify.app')" size="lg">React Portfolio</b-button>
+    <div class="mt-3 flex text-center flex-column">
+      <b-button pill class="btn m-2" @click="openUrl('https://izsk.vercel.app')" size="lg">NEXT portfolio</b-button>
+      <b-button pill class="btn m-2" @click="openUrl('https://izsk.netlify.app')" size="lg">React Portfolio</b-button>
     </div>
   </div>
 </template>
